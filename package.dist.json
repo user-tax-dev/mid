@@ -1,6 +1,6 @@
 {
   "name": "utax",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "license": "AGPL-3.0-or-later or Commercial",
   "author": "i@user.tax",
@@ -8,6 +8,8 @@
     ".": "./index.js",
     "./*": "./*"
   },
-  "files": ["*"],
+  "files": [
+    "*"
+  ],
   "repository": "git@github.com:user-tax-dev/utax.git"
 }
