@@ -20,7 +20,7 @@ cp package.dist.json lib/package.json
 cd lib
 npm set unsafe-perm true
 npm version patch
-cp lib/package.json ../package.dist.json
+cp package.json ../package.dist.json
 git add -u
 git commit -m v$version || true
 git push
