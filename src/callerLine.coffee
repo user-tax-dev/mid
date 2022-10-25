@@ -5,7 +5,7 @@ export default =>
 
   try
     err = new Error()
-    caller = err.stack[0]
+    caller = err.stack[2]
     line = caller.getFileName()+':'+caller.getLineNumber()+':'+caller.getColumnNumber()
   catch
     null
