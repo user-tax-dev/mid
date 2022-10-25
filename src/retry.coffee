@@ -1,4 +1,5 @@
 > ./callerLine.js
+  ./sleep.js
 
 < (fn)=>
   caller = callerLine()
@@ -12,4 +13,5 @@
         console.error fn, arguments, '\n\n'+caller+'\n'
         if ++n > 3
           throw err
+        await sleep 999
     return
