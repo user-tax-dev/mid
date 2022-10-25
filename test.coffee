@@ -2,7 +2,10 @@
 
 > ./lib/cookie2dict
 
-console.log cookie2dict 'I=1665481017; test=1665492012'
+
+do =>
+  console.log caller_line()
+#console.log cookie2dict 'I=1665481017; test=1665492012'
 
 ###
 > ./lib/render:
