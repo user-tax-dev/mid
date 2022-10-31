@@ -18,7 +18,7 @@
     "lib/*"
   ],
   "repository": "git@github.com:user-tax-dev/utax.git",
-  "dependencies": {
+  "peerDependencies": {
     "msgpackr": "^1.7.2"
   }
 }
