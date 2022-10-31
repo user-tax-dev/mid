@@ -17,5 +17,8 @@
   "files": [
     "lib/*"
   ],
-  "repository": "git@github.com:user-tax-dev/utax.git"
+  "repository": "git@github.com:user-tax-dev/utax.git",
+  "dependencies": {
+    "msgpackr": "^1.7.2"
+  }
 }
