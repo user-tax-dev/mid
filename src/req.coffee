@@ -6,7 +6,7 @@ TIMEOUT = 60000
   TIMEOUT = ms
   return
 
-< fetch = (url, option)=>
+< req = (url, option)=>
   ctrl = new AbortController()
 
   timeout = setTimeout(
@@ -24,8 +24,8 @@ TIMEOUT = 60000
 
   fetch(url,opt)
 
-< fetchText = (url,opt)=>
+< reqText = (url,opt)=>
   (await fetch(url,opt)).text()
 
-< fetchJson = (url,opt)=>
+< reqJson = (url,opt)=>
   (await fetch(url,opt)).json()
