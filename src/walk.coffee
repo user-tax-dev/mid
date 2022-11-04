@@ -22,7 +22,7 @@ walk = (dir, ignore) ->
         continue
       if s.isDirectory()
         len = p.length
-        for await i from walk(p)
+        for await i from walk(p, ignore)
           yield join entry, i[len..]
       else if s.isFile()
         yield entry
