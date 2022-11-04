@@ -5,7 +5,7 @@ walk = (dir, ignore) ->
   for await d from await opendir(dir)
 
     entry = join(dir, d.name)
-    if ignore?(entry)
+    if ignore?(entry, dir)
       continue
 
     if d.isDirectory()
