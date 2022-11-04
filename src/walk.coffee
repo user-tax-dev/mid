@@ -1,15 +1,15 @@
 import {opendir, readlink, stat} from 'fs/promises'
 import {dirname, join, normalize} from "path"
 
-walk = (dir, ignore) ->
+walk = (dir, ignore = =>) ->
   for await d from await opendir(dir)
 
     entry = join(dir, d.name)
-    if ignore?(entry, dir)
+    if ignore(entry)
       continue
 
     if d.isDirectory()
-      yield from walk(entry)
+      yield from walk(entry, ignore)
     else if (d.isFile())
       yield entry
     else if d.isSymbolicLink()
