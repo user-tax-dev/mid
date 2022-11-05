@@ -1,6 +1,6 @@
 {
-  "name": "utax",
-  "version": "0.0.25",
+  "name": "ulb",
+  "version": "0.0.0",
   "type": "module",
   "license": "AGPL-3.0-or-later or Commercial",
   "author": "i@user.tax",
@@ -8,8 +8,6 @@
     ".": "./index.js",
     "./*": "./*"
   },
-  "files": [
-    "*"
-  ],
-  "repository": "git@github.com:user-tax-dev/utax.git"
+  "files": ["*"],
+  "repository": "git@github.com:user-tax-dev/ulb.git"
 }
